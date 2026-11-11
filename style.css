@@ -217,6 +217,11 @@ main p {
   box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.16);
 }
 
+#campo-mensagem {
+  min-height: 12rem;
+  resize: vertical;
+}
+
 .button {
   transition: all 0.2s ease-in-out;
   border-radius: 7px;
