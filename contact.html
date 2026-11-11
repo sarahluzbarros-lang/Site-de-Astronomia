@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - AstroGuia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="header-custom">
+    <nav class="navbar is-dark" aria-label="Navegação Principal">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item has-text-weight-bold is-size-4 title-logo" href="index.html">
+            <span class="logo-sparkle" aria-hidden="true">✨</span><span class="cinzel-decorative-regular">AstroGuia</span>
+          </a>
+        </div>
+        <div class="navbar-menu is-active">
+          <div class="navbar-end">
+            <ul class="navbar-nav-list">
+              <li><a href="index.html" class="navbar-item">Início</a></li>
+              <li><a href="about.html" class="navbar-item">Guia do Céu</a></li>
+              <li><a href="contact.html" class="navbar-item is-active-page">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8-tablet is-6-desktop">
+          
+          <div class="box form-card">
+            <h1 class="title is-2 custom-heading text-center">Fale Conosco</h1>
+            <p class="subtitle is-6 text-center mb-5">Envie suas dúvidas, relatos de observação ou sugestões.</p>
+
+            <!-- Aviso importante sobre a demonstração -->
+            <div class="notification is-warning is-light mb-5" role="alert">
+              <strong>⚠️ Aviso Demonstrativo:</strong> Este formulário é apenas uma simulação acadêmica. Nenhuma mensagem é gravada ou enviada por e-mail. Ao enviar via método <code>GET</code>, os dados preenchidos serão exibidos diretamente no endereço (URL) do seu navegador. <strong>Não insira informações pessoais nem confidenciais.</strong>
+            </div>
+
+            <!-- Formulário Demonstrativo usando GET para a própria contact.html -->
+            <form action="contact.html" method="get">
+              
+              <div class="field">
+                <label for="campo-nome" class="label">Nome Completo</label>
+                <div class="control">
+                  <input type="text" id="campo-nome" name="nome" class="input" placeholder="Ex: Maria Silva" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="campo-email" class="label">E-mail de Contato</label>
+                <div class="control">
+                  <input type="email" id="campo-email" name="email" class="input" placeholder="Ex: usuario@exemplo.com" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="campo-mensagem" class="label">Sua Mensagem</label>
+                <div class="control">
+                  <textarea id="campo-mensagem" name="mensagem" class="textarea" rows="5" placeholder="Escreva aqui suas observações ou dúvidas astronômicas..." required></textarea>
+                </div>
+              </div>
+
+              <div class="field mt-5">
+                <div class="control">
+                  <button type="submit" class="button is-link is-fullwidth is-medium">Enviar Mensagem Demonstrativa</button>
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer custom-footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>AstroGuia</strong> — Guia Fictício de Astronomia Observacional. Desenvolvido para fins educacionais com Bulma CSS, HTML5 e CSS3.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
