@@ -51,6 +51,15 @@ p {
 a {
   color: #2563eb;
   text-decoration: none;
+  transition: color 0.18s ease, text-decoration-color 0.18s ease;
+}
+
+a:not(.navbar-item):not(.button):hover,
+a:not(.navbar-item):not(.button):focus-visible {
+  color: #1d4ed8;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
 }
 
 img {
